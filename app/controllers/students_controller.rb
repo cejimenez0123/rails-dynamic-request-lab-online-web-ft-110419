@@ -5,6 +5,6 @@ class StudentsController < ApplicationController
   end
   def show
 
-    @student = Student.find_by(params)
+    @student = Student.find_by(params).to_s
   end
 end
